@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Logístico</title>
+
+    <link rel="stylesheet" href="css/css.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dashboard Logístico</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total de Entregas</h3>
+                <p id="total">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Entregas Atrasadas</h3>
+                <p id="atrasadas">0</p>
+            </div>
+
+            <div class="card">
+                <h3>% de Atraso</h3>
+                <p id="percentual">0%</p>
+            </div>
+        </div>
+
+        <div class="grafico">
+            <canvas id="graficoAtrasos"></canvas>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Transportadora</th>
+                    <th>Região</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabela"></tbody>
+        </table>
+    </div>
+
+    <script src="java.js"></script>
+
+</body>
+</html>
